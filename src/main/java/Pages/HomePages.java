@@ -2,19 +2,19 @@ package Pages;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import static ObjectsPath.GithubPaths.*;
 import static ObjectsPath.HomePaths.*;
-import static ObjectsPath.LoginPaths.*;
+
 
 
 public class HomePages {
     WebDriver driver = null;
 
     public HomePages (WebDriver driver){
+
         this.driver = driver;
     }
+
     public void clickOnNewRepo(){
         WebElement NewRepo = driver.findElement(newRepBtn);
         NewRepo.click();

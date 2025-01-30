@@ -3,6 +3,7 @@ package ObjectsPath;
 import org.openqa.selenium.By;
 
 public class GithubPaths {
+    // Elemnts pathes for the landing page (SignIn and SignUp) and the terms and privacy on the SignUp page
 
     public static final By signIn = By.xpath("/html/body/div[1]/div[3]/header/div/div[2]/div/div/div/a");
 
@@ -12,7 +13,7 @@ public class GithubPaths {
 
     public static final By privacy = By.xpath("//a[contains(text(),'GitHub Privacy')]");
 
-    public static final By home = By.xpath("//a[@class='header-logo']");
+   // public static final By home = By.xpath("//a[@class='header-logo']");
 
 
 

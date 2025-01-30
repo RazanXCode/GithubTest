@@ -1,6 +1,7 @@
 package GithubWeb;
 
 import Base.BaseClass;
+import Pages.GithubPages;
 import Pages.HomePages;
 import Pages.LoginPages;
 import org.testng.annotations.Test;
@@ -15,23 +16,20 @@ public class GithubTest extends BaseClass {
         login.fillEmail();
         login.fillPassword();
         login.clickOnLogin();
-        Thread.sleep(3000);
-
-        // The below should be in A seprate Method called SignUp pages
-//        Thread.sleep(2000);
-//        login.clickOnHome();
-//        Thread.sleep(2000);
-//        login.clickOnSignUpBtn();
-//        Thread.sleep(2000);
-//        login.clickOnTerms();
-//        Thread.sleep(2000);
-//        login.clickOnPrivacy();
-//        Thread.sleep(2000);
-
+        Thread.sleep(2000);
 }
 
+
+    @Test
     public void SignUpPageMethod() throws InterruptedException {
 
+        GithubPages signUp = new GithubPages(driver);
+        signUp.openGitUrl();
+        signUp.clickOnSignUpBtn();
+        signUp.clickOnTerms();
+        Thread.sleep(3000);
+        signUp.clickOnPrivacy();
+        Thread.sleep(3000);
     }
 
 

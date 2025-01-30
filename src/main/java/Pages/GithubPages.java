@@ -36,11 +36,5 @@ public class GithubPages {
     }
 
 
-    public void clickOnHome(){
-        WebElement Home = driver.findElement(home);
-        Home.click();
-    }
-
-
 
 }
